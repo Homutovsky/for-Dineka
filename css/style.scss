@@ -1,0 +1,108 @@
+@function vw($value, $base: 1920) {
+  @return $value / $base * 100vw;
+}
+
+@function vmin($value, $base :375) {
+  @return $value / $base * 100vw
+}
+
+// @keyframes headerAnimation {
+//   0% {
+//     color: $textColorWhite;
+//   }
+
+//   100% {
+//     color: #dfb3d9;
+//     border-bottom: 2px solid #dfb3d9;
+//   }
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: vw(11);
+}
+
+
+.container {
+  max-width: 93vw;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: vw(27);
+  }
+
+  &__info--text {
+    max-width: vw(142);
+  }
+
+  &__info--adress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: vw(10);
+  }
+
+  &__info--adress-svg {
+    width: vw(35);
+    height: vw(35);
+  }
+
+  &__info--adress-text {
+    max-width: vw(157);
+  }
+
+  &__info--logo {
+    max-width: vw(213);
+    height: vw(50);
+  }
+
+  &__info--logo-img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__info--map {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: vw(10);
+  }
+
+  &__map--object {
+    width: vw(12);
+    height: vw(15);
+  }
+
+  &__map--text {
+    padding-bottom: vw(4);
+    position: relative;
+    background-image: url("../media/Пунктир.svg");
+    background-size: vw(3);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+  }
+
+
+  // &__map--text::after {
+  //   content: '';
+  //   display: block;
+  //   width: 50%;
+  //   border-bottom: vw(3) dotted #FD2016;
+  //   border-radius: vw(20);
+  //   position: absolute;
+  //   top: calc(100% + vw(4));
+  //   left: 0;
+  // }
+}

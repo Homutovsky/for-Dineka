@@ -1,0 +1,68 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 0.5729166667vw;
+}
+
+.container {
+  max-width: 93vw;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.40625vw;
+}
+.header__info--text {
+  max-width: 7.3958333333vw;
+}
+.header__info--adress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 0.5208333333vw;
+       column-gap: 0.5208333333vw;
+}
+.header__info--adress-svg {
+  width: 1.8229166667vw;
+  height: 1.8229166667vw;
+}
+.header__info--adress-text {
+  max-width: 8.1770833333vw;
+}
+.header__info--logo {
+  max-width: 11.09375vw;
+  height: 2.6041666667vw;
+}
+.header__info--logo-img {
+  width: 100%;
+  cursor: pointer;
+}
+.header__info--map {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 0.5208333333vw;
+       column-gap: 0.5208333333vw;
+}
+.header__map--object {
+  width: 0.625vw;
+  height: 0.78125vw;
+}
+.header__map--text {
+  padding-bottom: 0.2083333333vw;
+  position: relative;
+  background-image: url("../media/Пунктир.svg");
+  background-size: 0.15625vw;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */
